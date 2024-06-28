@@ -1,0 +1,125 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url("Bilder/bg_image_3.jpg");
+    background-size: cover;
+    
+}
+
+header {
+
+    padding: 1em 0em 1em 3em;
+    text-align: center;
+
+}
+
+/*navigation*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1.8rem 0.4rem;
+    display: inline-flex;
+    justify-content: center;
+    gap: 0;
+    background: #1f243d;
+    border-radius: 1rem;
+}
+nav a {
+    font-size: 1.2rem;
+    color: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-inline: 1rem;
+}
+nav li + li a {
+    border-inline-start: 2px solid black;
+}
+
+nav a.active {
+    color: orange;
+}
+
+nav a:not(.active):hover {
+    color: white;
+}
+
+a {
+    color: aliceblue;
+} 
+
+h1 {
+    color: aliceblue;
+    font-size: 3em;
+}
+    
+
+p.intro,
+p.outro {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 3em;
+
+}
+
+.lists {
+    display: flex; /*layout base; so the blocks can be side by side*/
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.432);
+    background-size: auto;
+    color: aliceblue;
+    padding: 2em;
+
+}
+
+table {
+    margin-left: 5em;
+    border-collapse: separate;
+    border-spacing: 1em 0em;
+}
+
+.cover {
+    width: 3em;
+}
+
+
+/* diskografie style */
+
+h4 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.box {
+    display: grid; /*layout base*/
+    width: 100%;
+    grid-template-columns: 20em 20em 20em; /*divides the width of the columns (boxes) */
+    align-items: start;
+    justify-content: space-evenly; /*space between boxes*/
+    background-color: rgba(0, 0, 0, 0.432);
+    color: aliceblue;
+    padding: 3em;
+}
+
+p.title {
+    font-size: 80%;
+}
+
+li {
+    text-align: left;
+    font-size: 70%;
+}
+
+.box1 li , .box2 li , .box3 li  {
+    font-size: 1.2rem;
+    padding-block: 0.25em 0.2em;
+    list-style-position: inside;
+}
+
+.box ol {
+    padding: 0;
+}
+
+.box li + li {
+    border-block-start: 2px solid #fff3;
+}
+
